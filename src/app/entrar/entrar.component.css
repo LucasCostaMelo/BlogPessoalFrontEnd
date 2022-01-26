@@ -1,0 +1,7 @@
+#img-bg {
+    background-image: url('https://images.alphacoders.com/113/thumb-1920-1135134.jpg');
+    min-height: 649px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
