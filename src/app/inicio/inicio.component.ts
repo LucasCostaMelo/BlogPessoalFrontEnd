@@ -14,9 +14,7 @@ export class InicioComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    if(environment.token == ''){
-      this.router.navigate(['/entrar'])
-    }
+    
   }
 
 }
