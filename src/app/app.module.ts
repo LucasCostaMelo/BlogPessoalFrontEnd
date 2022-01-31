@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { OrderModule} from 'ngx-order-pipe';
+
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -12,6 +14,14 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { TemaComponent } from './tema/tema.component';
+import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
+import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.componet';
+import { PostagemEditComponent } from './edit/tema-edit/postagem-edit/postagem-edit.component';
+import { PostagemDeleteComponent } from './delete/tema-delete/postagem-delete/postagem-delete.componet';
+import { UserEditComponent } from './edit/tema-edit/user-edit/user-edit.component';
+import { AlertasComponent } from './alertas/alertas.component';
+
 
 
 
@@ -29,7 +39,9 @@ import { InicioComponent } from './inicio/inicio.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    OrderModule
+
   ],
   providers: [{
     provide: LocationStrategy,

@@ -24,7 +24,10 @@ export class InicioComponent implements OnInit {
   idTema: number
 
   user: User = new User()
-  idUser =  environment.id 
+  idUser =  environment.id
+  
+  key = 'data'
+  reverse = true
   
 
   constructor(
